@@ -3,8 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #f7f7f7; /* Light background to make image pop */
+  height: 100%;
+  background-color:  #0a192f; /* Light background to make image pop */
   padding: 20px 0; /* Adds space to the top and bottom */
 }
 
@@ -35,4 +35,8 @@
   .image-container {
     max-width: 100%;
   }
+}
+
+.full{
+  background-color: #0a192f;
 }

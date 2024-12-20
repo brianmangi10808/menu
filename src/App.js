@@ -1,14 +1,19 @@
+// App.js (or the main entry point of your app)
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import myImage from './assets/Black.jpg';
+import Navbar from './Navbar';
+import Menu from './Menu';
 
 function App() {
   return (
-    <div className="app">
-      <div className="image-container">
-        <img src={myImage} alt="Responsive" className="responsive-image" />
-      </div>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Menu />} />
+        {/* Add other routes as needed */}
+      </Routes>
+    </Router>
   );
 }
 

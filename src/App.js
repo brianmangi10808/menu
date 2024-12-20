@@ -6,12 +6,14 @@ import Navbar from './Navbar';
 import Menu from './Menu';
 import About from './About';
 import Contact from './Contact';
+import ScrollProgressBar from './ScrollProgressBar'; 
 
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <ScrollProgressBar />
       <Routes>
         <Route path="/" element={<Menu />} />
       

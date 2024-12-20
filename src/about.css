@@ -1,0 +1,87 @@
+
+
+/* 3D Rotating Cube */
+.skills-showcase {
+    perspective: 1000px;
+    height: 400px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    background-color: #0a192f; /* Dark background */
+  }
+  
+  .rotating-cube {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 20s infinite linear;
+  }
+  
+  .cube-face {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0a192f;
+    background: rgba(100, 255, 218, 0.9);
+    border: 3px solid #64ffda;
+    box-shadow: 0 0 25px rgba(100, 255, 218, 0.3);
+  }
+  
+  .front {
+    transform: translateZ(125px);
+  }
+  .back {
+    transform: rotateY(180deg) translateZ(125px);
+  }
+  .right {
+    transform: rotateY(90deg) translateZ(125px);
+  }
+  .left {
+    transform: rotateY(-90deg) translateZ(125px);
+  }
+  .top {
+    transform: rotateX(90deg) translateZ(125px);
+  }
+  .bottom {
+    transform: rotateX(-90deg) translateZ(125px);
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    to {
+      transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+  }
+  
+.cont-about{
+    width: 30%;
+}
+  /* terminal */
+  .about-nav{
+    background-color: #0a192f;
+  }
+  .about-sect{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    
+  }
+  
+  .title-about{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
